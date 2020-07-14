@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lujieni.dbsharding.simple.dao.OrderDao">
+    <insert id="insertOrder">
+        insert into t_order(price,user_id,status)
+        value (#{price},#{userId},#{status})
+    </insert>
+
+    <select id="selectOrderById" resultType="java.util.Map">
+        select * from t_order
+        where order_id in
+        <foreach collection="ids" item="item" separator="," open="(" close=")">
+            #{item}
+        </foreach>
+    </select>
+</mapper>
