@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Auther lujieni
  * @Date 2020/7/8
  */
-@SpringBootApplication(exclude = SpringBootConfiguration.class)
+@SpringBootApplication //针对自定义配置而言要excclude(exclude = SpringBootConfiguration.class)
 public class ShardingJdbcSimpleStarter {
 
     public static void main(String[] args) {

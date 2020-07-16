@@ -33,7 +33,7 @@ public class OrderDaoTest {
 
     @Test
     public void testSelectOrder(){
-        List<Map> result = orderDao.selectOrderById(Arrays.asList(488357742407319552L, 488357742386348033L));
+        List<Map> result = orderDao.selectOrderById(Arrays.asList(490490770374000640L));
         for (Map map:result) {
             System.out.println(map);
         }

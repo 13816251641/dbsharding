@@ -53,6 +53,7 @@
             </plugin>
         </plugins>
 
+        <!--xml不过滤掉,必须要-->
         <resources>
             <resource>
                 <directory>${project.basedir}/src/main/java</directory>

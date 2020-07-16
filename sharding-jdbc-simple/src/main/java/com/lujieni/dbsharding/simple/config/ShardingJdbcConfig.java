@@ -5,9 +5,7 @@ import org.apache.shardingsphere.api.config.sharding.KeyGeneratorConfiguration;
 import org.apache.shardingsphere.api.config.sharding.ShardingRuleConfiguration;
 import org.apache.shardingsphere.api.config.sharding.TableRuleConfiguration;
 import org.apache.shardingsphere.api.config.sharding.strategy.InlineShardingStrategyConfiguration;
-import org.apache.shardingsphere.core.strategy.route.inline.InlineShardingStrategy;
 import org.apache.shardingsphere.shardingjdbc.api.ShardingDataSourceFactory;
-import org.apache.shardingsphere.shardingjdbc.jdbc.core.datasource.ShardingDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -17,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-@Configuration
+//@Configuration
 public class ShardingJdbcConfig {
 
 
