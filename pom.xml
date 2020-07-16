@@ -22,7 +22,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <mysql.connector.version>5.1.41</mysql.connector.version>
+        <mysql.connector.version>8.0.16</mysql.connector.version>
         <mybatis.spring.boot.version>1.2.0</mybatis.spring.boot.version>
         <druid.version>1.1.22</druid.version>
         <sharding.jdbc.version>4.0.0-RC1</sharding.jdbc.version>
