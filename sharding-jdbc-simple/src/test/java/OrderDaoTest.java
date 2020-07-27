@@ -32,8 +32,16 @@ public class OrderDaoTest {
     }
 
     @Test
-    public void testSelectOrder(){
-        List<Map> result = orderDao.selectOrderById(Arrays.asList(490490770374000640L));
+    public void testSelectOrderByOrderId(){
+        List<Map> result = orderDao.selectOrderById(Arrays.asList(493448537367904256L,493448537565036545L));
+        for (Map map:result) {
+            System.out.println(map);
+        }
+    }
+
+    @Test
+    public void testSelectOrderByUserIdAndOrderId(){
+        List<Map> result = orderDao.selectOrderByIdAndUserId(Arrays.asList(493448537367904256L,493448537565036545L),2L);
         for (Map map:result) {
             System.out.println(map);
         }

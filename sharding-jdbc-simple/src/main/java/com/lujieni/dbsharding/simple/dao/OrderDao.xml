@@ -15,4 +15,12 @@
             #{item}
         </foreach>
     </select>
+
+    <select id="selectOrderByIdAndUserId" resultType="java.util.Map">
+        select * from t_order
+        where user_id=#{userId} and order_id in
+        <foreach collection="ids" item="item" separator="," open="(" close=")">
+            #{item}
+        </foreach>
+    </select>
 </mapper>
